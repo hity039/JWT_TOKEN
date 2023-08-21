@@ -48,8 +48,6 @@ namespace SimpleJWT.Controllers
                     };
 
                     var tokenHandler = new JwtSecurityTokenHandler();
-                    var tokenHarndler = new JwtSecurityTokenHandler();
-
                     var token = tokenHandler.CreateToken(tokenDescriptor);
                     var jwtToken = tokenHandler.WriteToken(token);
                     
